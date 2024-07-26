@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio_mini</title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="https://kit.fontawesome.com/9b421c6505.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+                <img src="images/logoreal.png" id="logo">
+            <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">HIRE ME</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+       <div class="resp">
+        <div class="info">
+            <h1>I'm <span>Rahul </span>Shrivastava </h1>
+            <p>This is my prototype portfolio <br>website to showcase my works related to web-development and Design</p>
+            <a href="">Download CV</a>
+        </div>
+        <div class="imgbox">
+            <img src="images/pattern.png" class="back">
+            <img src="images/bgtoremove-removebg-preview.png" class="main">
+        </div>
+       </div>
+       <div class="socailinks">
+        <a  href="https://www.linkedin.com/in/rahul-shrivastava-2b98841b1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/gitrahul22" target="_blank"><i class="fa-brands fa-github"></i></a>
+       </div>
+    </div>
+    <script>
+        var icon=document.getElementById("icon");
+        let logo=document.getElementById("logo");
+        icon.onclick=function(){
+            document.body.classList.toggle("darkth");
+            if( document.body.classList.contains("darkth")){
+                logo.src="images/logodark.png";
+                icon.src="images/sun.png";
+            }else{
+                logo.src="images/logoreal.png";
+                icons.src="images/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
